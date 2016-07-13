@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+    <style>
+        body {
+            font-family: cursive;
+            margin: 0;
+        }
+        
+        .list {
+            width: 100%;
+            float: left;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .list li {
+            list-style: none;
+            width: 33.3%;
+            float: left;
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-bottom: 20px;
+            display: none;
+        }
+        
+        .list span {
+            background: #77787b;
+            color: #fff;
+            display: block;
+            text-align: center;
+            padding: 15px;
+            min-height: 400px;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        .load-btn {
+            margin: auto;
+            display: block;
+            padding: 5px 10px;
+            color: #fff;
+            background: #3a3b3e;
+            border: none;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="conatiner">
+        <ul class="list" id="list">
+            <li><span>1</span></li>
+            <li><span>2</span></li>
+            <li><span>3</span></li>
+            <li><span>4</span></li>
+            <li><span>5</span></li>
+            <li><span>6</span></li>
+            <li><span>7</span></li>
+            <li><span>8</span></li>
+            <li><span>9</span></li>
+            <li><span>10</span></li>
+            <li><span>11</span></li>
+            <li><span>12</span></li>
+            <li><span>13</span></li>
+            <li><span>14</span></li>
+            <li><span>15</span></li>
+            <li><span>16</span></li>
+            <li><span>17</span></li>
+            <li><span>18</span></li>
+            <li><span>19</span></li>
+            <li><span>20</span></li>
+            <li><span>21</span></li>
+            <li><span>22</span></li>
+            <li><span>23</span></li>
+            <li><span>24</span></li>
+            <li><span>25</span></li>
+        </ul>
+        <button id="btn" class="load-btn">Load More..</button>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="./loadmore.js"></script>
+    <script>
+        $("#list").loadMore({
+            selector: 'li',
+            loadBtn: '#btn',
+            limit: 6
+        });
+    </script>
+</body>
+
+</html>

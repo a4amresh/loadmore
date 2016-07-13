@@ -33,6 +33,7 @@
             display: block;
             text-align: center;
             padding: 15px;
+            min-height: 400px;
         }
         
         * {
@@ -83,13 +84,13 @@
         </ul>
         <button id="btn" class="load-btn">Load More..</button>
     </div>
-    <script src="./assets/js/jquery.min.js"></script>
-    <script src="./app/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="./loadmore.js"></script>
     <script>
         $("#list").loadMore({
             selector: 'li',
             loadBtn: '#btn',
-            limit: 5
+            limit: 3
         });
     </script>
 </body>
