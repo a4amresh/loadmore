@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Hello</title>
+    <link rel="stylesheet" href="../animate.css">
     <style>
         body {
             font-family: cursive;
@@ -84,13 +85,12 @@
         </ul>
         <button id="btn" class="load-btn">Load More..</button>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="../jquery.min.js"></script>
     <script src="./loadmore.js"></script>
     <script>
         $("#list").loadMore({
             selector: 'li',
-            loadBtn: '#btn',
-            limit: 6
+            loadBtn: '#btn'
         });
     </script>
 </body>

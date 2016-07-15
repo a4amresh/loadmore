@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Hello</title>
+    <link rel="stylesheet" href="../animate.css">
     <style>
         body {
             font-family: cursive;
@@ -47,7 +48,7 @@
             color: #fff;
             background: #3a3b3e;
             border: none;
-            margin-bottom: 20px;
+            margin-bottom: 200px;
             cursor: pointer;
         }
     </style>
@@ -90,7 +91,10 @@
         $("#list").loadMore({
             selector: 'li',
             loadBtn: '#btn',
-            limit: 3
+            limit: 3,
+            load: 3,
+            animate: true,
+            animateIn: 'fadeInUp'
         });
     </script>
 </body>

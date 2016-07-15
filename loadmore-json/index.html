@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Hello</title>
+    <link rel="stylesheet" href="../animate.css">
     <style>
         body {
             font-family: cursive;
@@ -69,7 +70,7 @@
             loadBtn: '#btn',
             getData: function(elem, data) {
                 $.each(data, function(index, value) {
-                    $(elem).append('<li><img src=' + value['thumbnailUrl'] + '></li>');
+                    $(elem).append('<li class="animated zoomIn"><img src=' + value['thumbnailUrl'] + '></li>');
                 });
             }
         });

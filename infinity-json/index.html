@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Hello</title>
+    <link rel="stylesheet" href="../animate.css">
     <style>
         body {
             font-family: cursive;
@@ -61,6 +62,7 @@
         <ul class="list" id="list"></ul>
         <button id="btn" class="load-btn">Load More..</button>
     </div>
+    <div class="ap kumar kara lara"></div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
     <script src="./loadmore.js"></script>
     <script>
@@ -69,7 +71,7 @@
             loadBtn: '#btn',
             getData: function(elem, data) {
                 $.each(data, function(index, value) {
-                    $(elem).append('<li><img src=' + value['thumbnailUrl'] + '></li>');
+                    $(elem).append('<li class="animated zoomIn"><img src=' + value['thumbnailUrl'] + '></li>');
                 });
             }
         });
